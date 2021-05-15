@@ -1,0 +1,3 @@
+pytest
+guildai
+neptune-client
