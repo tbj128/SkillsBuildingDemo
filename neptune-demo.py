@@ -18,8 +18,8 @@ run["parameters"] = params
 
 # Track the training process by logging your training metrics
 for epoch in range(100):
-    run["train/accuracy"].log(epoch * 0.6)
-    run["train/loss"].log(epoch * 0.4)
+    run["train/accuracy"].log(2 ** -epoch * 0.6)
+    run["train/loss"].log(2 ** -epoch * 0.4)
 
 # Log the final results
 run["f1_score"] = 0.66
